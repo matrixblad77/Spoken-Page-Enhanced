@@ -22,11 +22,11 @@ This repository is **not the official Spoken Page repository**. Please use the o
 
 ## Screenshots
 
-### Library
+### Library (Top Main)
 
 ![Spoken Page Enhanced library](docs/images/1.PNG)
 
-### Book details / read-along
+### Book details / Lists
 
 ![Spoken Page Enhanced book details](docs/images/2.PNG)
 
@@ -34,19 +34,19 @@ This repository is **not the official Spoken Page repository**. Please use the o
 
 ![Spoken Page Enhanced fullscreen player](docs/images/3.PNG)
 
-### Appearance customization
+###  Minimize/ Roll up/down Player Controls 
 
 ![Spoken Page Enhanced appearance controls](docs/images/4.PNG)
 
-### Personal lists
+### Player Controls Minimized
 
 ![Spoken Page Enhanced personal lists](docs/images/5.PNG)
 
-### Bookmarks
+### Subtitle Settings
 
 ![Spoken Page Enhanced bookmarks](docs/images/6.PNG)
 
-### Audio visualizer
+### Cover/BG/Audio visualizer effects/Subtitle settings Menu
 
 ![Spoken Page Enhanced audio visualizer](docs/images/7.PNG)
 
@@ -57,6 +57,7 @@ Spoken Page v1.3 provides the foundation for this project. The upstream project 
 See the original project's README and release notes for the authoritative upstream feature list and history:
 
 https://github.com/JCDeSantis/spoken-page
+Will need to install Docker
 
 ## Enhanced features
 
@@ -69,6 +70,7 @@ https://github.com/JCDeSantis/spoken-page
 - Cover editing is locked by default and must be unlocked before editing.
 - Per-book visual settings can be saved.
 - Fullscreen close, fullscreen, pop-out, subtitle options, and appearance controls are kept separate from the visual layers so transparent artwork cannot block buttons.
+- Minimize up/down Player Controls to see entire screen while adjusting or convenience.
 
 ### Appearance customization
 
