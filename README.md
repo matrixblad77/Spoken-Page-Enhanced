@@ -18,7 +18,6 @@ Spoken Page Enhanced is an independent enhancement project built from Spoken Pag
 
 This repository is **not the official Spoken Page repository**. Please use the original project for upstream features, issues, and releases. See the credit section below.
 
-## Screenshots
 
 ## Screenshots
 
@@ -120,19 +119,97 @@ Review changes before using the project in an important or internet-facing envir
 
 ## Installation
 
-### Recommended: start from the original Spoken Page project
+Spoken Page Enhanced can be installed either as a new application or as an enhancement to an existing compatible Spoken Page v1.3.0 source installation.
 
-This is an enhancement project based on Spoken Page v1.3.0. The safest installation path is to start from a compatible Spoken Page source tree and replace only the Enhanced files documented by this repository.
+### New installation — recommended
 
-**Do not blindly overwrite your own `compose.yml`, `.env`, authentication code, or machine-specific configuration.** Enhanced source files are not a universal patch for every future Spoken Page version.
+For a new installation, use the **Spoken Page Enhanced** repository/release directly.
 
-Typical files changed by this project:
+You do **not** need to install the original Spoken Page separately.
+
+See the complete [Installation Guide](INSTALL.md) for Docker Desktop setup, Audiobookshelf configuration, first startup, and troubleshooting.
+
+### Requirements
+
+Spoken Page Enhanced runs with Docker.
+
+**Windows:** Install [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/) and make sure Docker Desktop is running before starting the application.
+
+Verify Docker from PowerShell:
+
+```powershell
+docker --version
+docker compose version
+```
+
+Node.js and npm are **not required on the host computer** for the normal Docker installation.
+
+### Quick start
+
+Clone the repository:
+
+```powershell
+git clone https://github.com/matrixblad77/Spoken-Page-Enhanced.git
+cd Spoken-Page-Enhanced
+```
+
+Create your environment file:
+
+```powershell
+Copy-Item .\.env.example .\.env
+```
+
+Configure `.env` with a strong secret and the Audiobookshelf URL reachable from inside the Docker container.
+
+Example:
+
+```dotenv
+SPOKEN_PAGE_SECRET=replace-with-a-long-random-value
+SPOKEN_PAGE_ABS_BASE_URL=http://host.docker.internal:13378
+```
+
+Start the application:
+
+```powershell
+docker compose up -d
+```
+
+Then open:
+
+```text
+http://localhost:3000
+```
+
+For the complete setup instructions, see [INSTALL.md](INSTALL.md).
+
+### Already using Spoken Page v1.3.0?
+
+Spoken Page Enhanced v1.3.2 is based on **Spoken Page v1.3.0**.
+
+If you already have a working Spoken Page v1.3.0 source installation, you can apply the Enhanced v1.3.2 changes without replacing your machine-specific configuration.
+
+The primary Enhanced source files for v1.3.2 are:
 
 ```text
 src/components/player-panel.tsx
 src/components/dashboard.tsx
+src/components/spoken-page-header.tsx
 src/app/globals.css
 ```
+
+**Do not overwrite your `.env`, `compose.yml`, Audiobookshelf authentication/connection settings, persistent data, or other machine-specific configuration unless the release-specific instructions tell you to do so.**
+
+Back up your existing project before applying changes and follow [INSTALL.md](INSTALL.md) for the existing-installation procedure.
+
+### Version compatibility
+
+| Enhanced release | Upstream Spoken Page base |
+| ---------------- | ------------------------- |
+| v1.3.2           | v1.3.0                    |
+
+Enhanced releases are tied to their documented upstream base version. Do not copy files from an Enhanced release into an unrelated Spoken Page version without checking the release documentation first.
+
+
 
 Depending on the release, additional Enhanced source files may be included. Follow the release-specific installation guide rather than copying unknown files into an unrelated Spoken Page version.
 
