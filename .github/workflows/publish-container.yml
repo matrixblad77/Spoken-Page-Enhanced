@@ -52,7 +52,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v6
         with:
-          images: ghcr.io/jcdesantis/spoken-page
+          images: ghcr.io/matrixblad77/spoken-page-enhanced
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=tag

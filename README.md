@@ -20,15 +20,35 @@ This repository is **not the official Spoken Page repository**. Please use the o
 
 ## Screenshots
 
-Screenshots will be added here as the project is documented.
+## Screenshots
 
-Place images in `docs/images/` and embed them like this:
+### Library
 
-```md
-![Library](docs/images/01-library.png)
-![Fullscreen read-along](docs/images/02-fullscreen.png)
-![Appearance settings](docs/images/03-appearance.png)
-```
+![Spoken Page Enhanced library](docs/images/1.PNG)
+
+### Book details / read-along
+
+![Spoken Page Enhanced book details](docs/images/2.PNG)
+
+### Fullscreen player
+
+![Spoken Page Enhanced fullscreen player](docs/images/3.PNG)
+
+### Appearance customization
+
+![Spoken Page Enhanced appearance controls](docs/images/4.PNG)
+
+### Personal lists
+
+![Spoken Page Enhanced personal lists](docs/images/5.PNG)
+
+### Bookmarks
+
+![Spoken Page Enhanced bookmarks](docs/images/6.PNG)
+
+### Audio visualizer
+
+![Spoken Page Enhanced audio visualizer](docs/images/7.PNG)
 
 ## Original Spoken Page features retained
 

@@ -1,15 +1,16 @@
 "use client";
 
 /*
- * [Spoken Page Enhanced v1.3.15] PUBLIC BRANDING HEADER
- * ----------------------------------------------------
+ * [Spoken Page Enhanced] PUBLIC BRANDING HEADER
+ * ----------------------------------------------
  * Custom product identity for the Enhanced project.
  * Original base: Spoken Page v1.3.0
- * Custom release: v1.3.15
+ * Release version is read from package.json.
  * This file intentionally contains no machine-specific paths or configuration.
  */
 
 import Image from "next/image";
+import { APP_VERSION } from "@/lib/app-version";
 
 export function SpokenPageHeader() {
   return (
@@ -32,7 +33,7 @@ export function SpokenPageHeader() {
                 <h1>
                   Spoken Page <span className="enhanced-word">Enhanced</span>
                 </h1>
-                <span className="app-version">v1.3.15</span>
+                <span className="app-version">v{APP_VERSION}</span>
               </div>
               <p>Subtitle-ready listening synced with Audiobookshelf</p>
               <p className="enhanced-origin">
