@@ -1,0 +1,14 @@
+Repository name:
+spoken-page-enhanced
+
+Suggested description:
+Spoken Page Enhanced — a subtitle-first Audiobookshelf companion with fullscreen read-along customization, visualizer effects, bookmarks, and personal lists.
+
+Suggested About website:
+https://github.com/JCDeSantis/spoken-page
+
+Suggested topics:
+audiobookshelf, audiobook, subtitles, srt, read-along, docker, nextjs, pwa, audiobook-player, audiobook-library
+
+One-line tagline:
+A customizable subtitle-first listening experience for Audiobookshelf.
